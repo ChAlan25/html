@@ -1,0 +1,46 @@
+.a1{
+    height: 50px;
+    width: 100%;
+    background-color: #ffff00;
+    text-align: center;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+.a2{
+    height: 200px;
+    width: 88.5%;
+    background-color: orangered;
+    display: flex;
+    padding-left: 150px;
+}
+h1{
+    margin-left: 100px;
+    margin-top: 65px;
+    font-family: Arial;
+}
+.a3{
+    height: 400px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+article{
+    display: flex;
+    background-color: purple;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+}
+.a4{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(173, 162, 62);
+}
+.m1{
+    border: 5px solid white;
+}

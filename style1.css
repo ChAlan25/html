@@ -1,0 +1,126 @@
+header{
+    box-shadow: 2.5px 3px 5px black;
+    border-radius: 0px 10px;
+}
+#icon{
+    color: rgb(255, 173, 22);
+    margin-left: 90px;
+    font-family: Impact;
+    
+}
+#navigation{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial;
+}
+.t1{
+    width: 100%;
+    padding: 7px 30px;
+}
+.bla3{
+    width: 10%;
+}
+article{
+    width: 50%;
+    padding-left: 50px;
+}
+.art{
+    font-family: Georgia;
+    width: 10%;
+}
+aside{
+    width: 50%;
+    text-align: center;
+    background-image: url(i.webp);
+    background: linear-gradient(45deg,rgba(225, 0, 0),rgb(76, 0, 255)),url(i.webp),;
+    height: 500px;
+    background-position: 50% 50%;
+}
+.dimg{
+    display: flex;
+}
+.im1{
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px black;
+}
+body {
+    background: linear-gradient(-45deg, #2c0000, #cf0e0e, #0004e4, #45c3fd);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+.b{
+    background-color: rgb(247, 222, 180);
+    border: 5px solid rebeccapurple;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 40%;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+.b:hover{
+    background-color: yellow;
+    transition-duration: 5s;
+}
+.im2{
+    filter: opacity(70%);
+    margin: 4.5% 0px;
+}
+.im2:hover{
+    scale: 1.1;
+    transition: 0.45s;
+}
+.gallery{
+    width: 100%;
+    column-gap: 5%;
+    columns: 3;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    
+}
+.p3{
+    font-weight: bolder;
+}
+.p3 h2{
+    text-decoration-line: underline;
+}
+.p3 input{
+    background: unset;
+    border: 0cap solid white;
+    font-weight: bold;
+    color: black;
+    border-bottom: #cf0e0e solid;
+}
+.p3 textarea{
+    background: unset;
+    border: 0cap solid white;
+    border-bottom: #cf0e0e solid;
+    font-weight: bold;
+    color: black;
+}
+[placeholder~=""]{
+    font-weight: bolder;
+}
+.p3 input[type=submit]{
+    border: 3px solid red;
+    border-radius: 20px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 50px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
