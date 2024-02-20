@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function grade(){
+            var a=document.getElementById('g').value;
+            if(a>=90){
+                b="A"
+            }else if(a>=80){
+                b="B"
+            }else if(a>=70){
+                b="C"
+            }else if(a>=60){
+                b="D"
+            }else{
+                b="f"
+            }
+            document.getElementById('r').innerHTML=("grade is "+b);
+        }
+        function date(){
+            var a=document.getElementById('g').value;
+            var b=a%7;
+            if(b==1){
+                b="monday"
+            }else if(b==2){
+                b="tuesday"
+            }else if(b==3){
+                b="wednisday"
+            }else if(b==4){
+                b="thursday"
+            }else if(b==5){
+                b="friday"
+            }else if(b==6){
+                b="saturday"
+            }else if(b==0){
+                b="sunday"
+            }
+            document.getElementById('r').innerHTML=("the day is "+b);
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="g">
+    <button onclick="grade()">click on me ex1</button>
+    <button onclick="date()">click on me ex2</button>
+    <p id="r"></p>
+</body>
+</html>
