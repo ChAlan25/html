@@ -22,23 +22,48 @@
         }
         function date(){
             var a=document.getElementById('g').value;
-            var b=a%7;
-            if(b==1){
-                b="monday"
-            }else if(b==2){
-                b="tuesday"
-            }else if(b==3){
-                b="wednisday"
-            }else if(b==4){
-                b="thursday"
-            }else if(b==5){
-                b="friday"
-            }else if(b==6){
-                b="saturday"
-            }else if(b==0){
-                b="sunday"
+            if(0<a<32){
+                var b=a%7;
+                switch(b){
+                    case 1:
+                    b="monday";
+                    break;
+                    case 2:
+                    b="tuesday"
+                    break;
+                    case 3:
+                    b="wednisday";
+                    break;
+                    case 4:
+                    b="thursday";
+                    break;
+                    case 5:
+                    b="friday";
+                    break;
+                    case 6:
+                    b="saturday";
+                    break;
+                    case 0:
+                    b="sunday";
+                    break;
+                }
+                document.getElementById('r').style.color="red";
+                document.getElementById('r').innerHTML=("the day is "+b);
             }
-            document.getElementById('r').innerHTML=("the day is "+b);
+            else{
+                document.getElementById('r').innerHTML=("the input must be between 1 and 31");
+            }
+        }
+        function multi(){
+            n=document.getElementById("g").value;
+            r=""
+            for(i=1;i<11;i++){
+                r=r+(n*i)+" "
+            }
+            document.getElementById('r').innerHTML=(r)
+        }
+        function sum(){
+            
         }
     </script>
 </head>
@@ -46,6 +71,8 @@
     <input type="number" id="g">
     <button onclick="grade()">click on me ex1</button>
     <button onclick="date()">click on me ex2</button>
+    <button onclick="multi()">click on me ex3</button><br>
+    <button onclick="sum()">click on me ex4</button>
     <p id="r"></p>
 </body>
 </html>
